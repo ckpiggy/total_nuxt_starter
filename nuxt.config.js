@@ -1,4 +1,11 @@
 module.exports = {
+  build: {
+    postcss: [
+      require('autoprefixer')({
+        browsers: ['last 3 versions']
+      })
+    ]
+  },
   srcDir: 'nuxt/',
   head: {
     link: [
